@@ -1,0 +1,107 @@
+/* index page*/
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Center content horizontally */
+    background-color: #ffffff; /* Or any color you prefer */
+}
+
+/* Add styles for .Welcome class if needed */
+.Welcome {
+    /* This will ensure the h1 is at the top */
+    margin-top: 20px; /* Or any space you prefer from the top */
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure it spans the full width */
+    /* Add any additional styling for the h1 tag here */
+}
+
+
+
+.center {
+    text-align: center; /* Center-align text for all items in .center */
+}
+
+.center a {
+    display: inline-block; /* Display links as inline blocks to center them */
+    margin: 20px; /* Add some space between the links */
+    position: relative; /* Position relative to place text over the image */
+    text-decoration: none; /* Optional: Removes underline from links */
+    color: #000; /* Text color */
+}
+
+.center img {
+    width: 100%; /* Make the image scale to its parent's width */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Smooth transformation and filter effect upon hover */
+}
+
+.center a h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease; /* Smooth transition for text opacity */
+    opacity: 0; /* Text is invisible initially */
+    color: #000; /* Text color for better visibility */
+    font-weight: bold; /* Make the text bold */
+    width: 100%; /* Full width of the parent */
+    margin: 0; /* Remove default margins */
+    pointer-events: none; /* Ensures the mouse hover works on the image, not text */
+    font-size: xx-large; /* Increase the size of the font */
+    background-color: rgba(255, 255, 255, 0.5); /* Optional: Add background to text for readability */
+    padding: 5px; /* Optional: Add some padding to the text */
+    border-radius: 5px; /* Optional: Round the corners of the text background */
+}
+
+/* Ensure the links have a defined width for the images */
+.center a {
+    width: 250px; /* Set the width of the anchor to match the image width */
+}
+
+/* Make adjustments for specific images if needed */
+.center a:first-child {
+    width: 250px; /* Width of the first image */
+}
+
+.center a:last-child {
+    width: 330px; /* Width of the second image */
+}
+
+ /* str page*/
+
+
+/* Iframe PDF Viewer Style */
+.PDF {
+    display: block;
+    margin: 20px auto; /* Center the iframe */
+    border: 1px solid #000000; /* A light border around the PDF iframe */
+    box-shadow: 0 0 8px rgba(0,0,0,0.1); /* Soft shadow for some depth */
+}
+.vid{
+                
+    display: block;
+  margin: 20px auto; /* Center the iframe */
+  border: 1px solid #000000; /* A light border around the PDF iframe */
+ box-shadow: 0 0 8px rgba(0.2,0.2,0.2,0.2); /* Soft shadow for some depth */
+   
+}
+
+/* Download Button Style */
+.Download {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0px;
+    background-color: #7879a8; /* Bootstrap success color for example */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.Download:hover {
+    background-color: #5fc2d3; /* Darker shade on hover */
+}
